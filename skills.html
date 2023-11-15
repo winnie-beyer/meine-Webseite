@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winnies Website</title>
+    <script
+      src="https://kit.fontawesome.com/c5f5d42a72.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+  </head>
+  <body class=" bg-blue-200">
+    
+<div w3-include-HTML="header.html"></div>
+
+    <main class="mb-52">
+      <ul class="w-full sm:w-2/3 md:w-1/3 mx-auto mt-16 text-3xl leading-relaxed ">
+        <li>
+          <h1 class="font-bold drop-shadow-[0_10px_5px_rgba(0,0,0,0.5)]">Sprachskill:</h1>
+          <ul class="ml-16 text-2xl">
+            <li class="list-disc ">Englisch</li>
+            <li class="list-disc">Deutsch</li>
+            <li class="list-disc">Mandarin</li>
+            <li class="list-disc">Kantonesisch</li>
+          </ul>
+        </li>
+
+        <li>
+          <h1 class="font-bold  drop-shadow-[0_10px_5px_rgba(0,0,0,0.5)]" >Web-Programming:</h1>
+          <ul class="ml-16 text-2xl">
+            <li class="list-disc">HTML</li>
+            <li class="list-disc">Css</li>
+            <li class="list-disc">JavaScript(Es kommt bald)</li>
+          </ul>
+        </li>
+
+        <li>
+          <h1 class="font-bold drop-shadow-[0_10px_5px_rgba(0,0,0,0.5)]">Web-Frameworks:</h1>
+          <ul class="ml-16 text-2xl">
+            <li class="list-disc">Bootstrap</li>
+            <li class="list-disc">Tailwindcss</li>
+          </ul>
+         
+        </li>
+        <li>
+          <h1 class="font-bold drop-shadow-[0_10px_5px_rgba(0,0,0,0.5)]">Betriebssysteme:</h1>
+          <ul class="ml-16 text-2xl">
+            <li class="list-disc "> Ubuntu</li>
+          </ul>
+        
+        </li>
+        <li><h1 class="font-bold mt-10 text-blue-500 drop-shadow-[0_10px_5px_rgba(0,0,0,0.5)]">Hoch motiviert mehr zu lernen.
+          <br>Weiteres in naher Zukunft</h1></li>
+      </ul>
+    </main>
+
+        <!-- Inhalt von footer.html -->
+        <div w3-include-HTML="footer.html"></div>
+
+    <script>
+      w3.includeHTML(() => {
+        const menu = document.getElementById("menu");
+        const menuTrigger = document.getElementById("menu-burger");
+
+        const showHideMenu = () => {
+          console.log("showHideMenu");
+          menu.classList.toggle("scale-x-0");
+        };
+
+        menuTrigger.addEventListener("click", showHideMenu);
+      });
+  </script>
+  </body>
+</html>

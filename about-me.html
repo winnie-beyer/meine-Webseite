@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winnies Website</title>
+    <script
+      src="https://kit.fontawesome.com/c5f5d42a72.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  </head>
+  <body class="bg-blue-200 h-screen">
+    <div w3-include-HTML="header.html"></div>
+
+    <main class="my-10 h-5/6 mb-52">
+      <h1
+        class="text-4xl font-bold text-center drop-shadow-[0_10px_5px_rgba(0,0,0,0.5)]"
+      >
+        Über mich
+      </h1>
+
+      <!-- mit init wird das Carousel gestartet -->
+      <div
+        x-data="carousel()"
+        x-init="init()"
+        class="relative overflow-hidden text-center h-5/6 mt-10"
+      >
+        <div
+          x-ref="container"
+          class="flex transition-transform ease-in-out duration-300 h-full"
+        >
+          <div class="w-full flex-shrink-0">
+            <!-- Slide 1 -->
+            <img
+              src="./images/frustrate.jpg"
+              alt="Slide 1"
+              class="h-4/5 object-cover w-2/3 lg:w-1/3 mx-auto mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
+            />
+            <h3 class="">
+              Mein erstes Wort war "Schokoladenmakronen".<br />
+              <strong
+                >Ich konnte vor 7 Jahren kein <br />
+                Auto fahren, Essen kochen, gar nichts!</strong
+              >
+            </h3>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="w-full flex-shrink-0">
+            <img
+              src="images/Führerschein.jpg"
+              alt="Slide 2"
+              class= "h-4/5 object-cover w-2/3 lg:w-1/3 mx-auto mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
+            />
+            <h3>Danach habe ich Führerschein,</h3>
+          </div>
+
+          <!-- Slide 3-->
+          <div class="w-full flex-shrink-0">
+            <img
+              src="images/C1.jpg"
+              alt="Slide 3"
+              class="h-4/5 object-cover w-2/3 lg:w-1/3 mx-auto mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
+            />
+            <h3>Deutsch Level C1 geschafft</h3>
+          </div>
+
+          <!-- Slide 4-->
+          <div class="w-full flex-shrink-0">
+            <img
+              src="images/Essen.jpeg"
+              alt="Slide 3"
+              class="h-4/5  mx-auto mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
+            />
+            <h3>leckeres Essen kann ich auch kochen</h3>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="w-full flex-shrink-0">
+            <img
+              src="images/coding.jpg"
+              alt="Slide 3"
+              class="h-4/5 object-fill w-2/3 lg:w-1/3 mx-auto mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
+            />
+            <h3>
+              Jetzt lerne ich programmieren mit vielen ganz netten, fleissigen
+              Menschen beim DCI;-)
+            </h3>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="w-full flex-shrink-0">
+            <img
+              src="images/Marathon.jpg"
+              alt="Slide 3"
+              class="h-5/6 mx-auto mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
+            />
+            <h3>
+              Vor 4 Jahren habe ich 1/3 Marathon in Karlsruhe zum ersten Mal
+              geschafft
+            </h3>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="w-full flex-shrink-0">
+            <img
+              src="images/Joggen.jpg"
+              alt="Slide 3"
+              class="h-4/5 object-fill  mx-auto mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
+            />
+            <h3>Waldlauf in Stutensee,</h3>
+          </div>
+
+          <!-- Slide 8-->
+          <div class="w-full flex-shrink-0">
+            <img
+              src="images/Joggen 2.jpg"
+              alt="Slide 3"
+              class="h-5/6 object-fill mx-auto mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
+            />
+            <h3>ich war auf den ersten Platz</h3>
+          </div>
+
+          <!-- Slide 9 -->
+          <div class="w-full flex-shrink-0">
+            <img
+              src="images/Fahrrad fahren.jpg"
+              alt="Slide 3"
+              class="h-4/5 object-fill mx-auto mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
+            />
+            <h3>Ich fahre auch sehr gern Fahrrad</h3>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="w-full flex-shrink-0">
+            <img
+              src="images/mit Familie.jpg"
+              alt="Slide 3"
+              class=" h-4/5 object-fill mx-auto mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
+            />
+            <h3>Mit meiner lieben Familie</h3>
+          </div>
+        </div>
+        <button
+          x-on:click="prevSlide"
+          class="absolute rounded-2xl left-2 lg:left-24 top-1/3 transform -translate-y-1/2 px-4 py-2 bg-blue-800 text-white"
+        >
+         Zurück
+        </button>
+        <button
+          x-on:click="nextSlide"
+          class="absolute rounded-2xl right-2 lg:right-24  top-1/3 transform -translate-y-1/2 px-4 py-2 bg-blue-800 text-white"
+        >
+          Weiter
+        </button>
+      </div>
+
+      <!--  carousel Maschine  -->
+      <script src="carousel.js"></script>
+      <!-- Alpine Maschine + Alpine Starten, und Alpine startet das Carousel -->
+      <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"></script>
+    </main>
+
+    <!-- Inhalt von footer.html -->
+    <div w3-include-HTML="footer.html"></div>
+
+    <script>
+      w3.includeHTML(() => {
+        const menu = document.getElementById("menu");
+        const menuTrigger = document.getElementById("menu-burger");
+
+        const showHideMenu = () => {
+          console.log("showHideMenu");
+          menu.classList.toggle("scale-x-0");
+        };
+
+        menuTrigger.addEventListener("click", showHideMenu);
+      });
+    </script>
+  </body>
+</html>

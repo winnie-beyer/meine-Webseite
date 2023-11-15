@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: 0;
+}
+
+
+input, textarea, .submit-btn {
+    padding: .5rem;
+    border: 1px solid rgba(128, 128, 128, 0.65);
+}
+
+img {
+    border-radius: 20px;
+    
+    
+}
+
