@@ -2,21 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* General Setting */
 *{
     padding: 0;
     margin:0;
     box-sizing: 0;
 }
-
-
-input, textarea, .submit-btn {
-    padding: .5rem;
-    border: 1px solid rgba(128, 128, 128, 0.65);
+:root {
+    font-family: sans-serif;
 }
-
 img {
     border-radius: 20px;
     
-    
 }
+
+/* form */
+input, textarea, .submit-btn {
+    padding: .5rem;  
+    border: 1px solid rgba(128, 128, 128, 0.65);
+}
+
+
+
 

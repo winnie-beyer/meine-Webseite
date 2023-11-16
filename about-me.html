@@ -20,7 +20,7 @@
       >
         Über mich
       </h1>
-        <!-- Carousel -->
+      <!-- Carousel -->
       <!-- mit init wird das Carousel gestartet -->
       <div
         x-data="carousel()"
@@ -36,9 +36,9 @@
             <img
               src="./images/frustrate.jpg"
               alt="Slide 1"
-              class="h-4/5 lg:w-1/3 mx-auto     mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
+              class="h-4/5 mx-auto mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
             />
-            <h3 class=""> 
+            <h3 class="">
               Mein erstes Wort war "Schokoladenmakronen".<br />
               <strong
                 >Ich konnte vor 7 Jahren kein <br />
@@ -52,7 +52,7 @@
             <img
               src="images/Führerschein.jpg"
               alt="Slide 2"
-              class= "h-4/5 object-cover w-2/3 lg:w-1/3 mx-auto mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
+              class="h-4/5 object-cover mx-auto mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
             />
             <h3>Danach habe ich Führerschein,</h3>
           </div>
@@ -108,7 +108,7 @@
             <img
               src="images/Joggen.jpg"
               alt="Slide 3"
-              class="h-4/5 object-fill  mx-auto mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
+              class="h-4/5 object-fill mx-auto mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
             />
             <h3>Waldlauf in Stutensee,</h3>
           </div>
@@ -138,20 +138,20 @@
             <img
               src="images/mit Familie.jpg"
               alt="Slide 3"
-              class=" h-4/5 object-fill mx-auto mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
+              class="h-4/5 object-fill mx-auto mb-5 drop-shadow-[0_20px_15px_rgba(0,0,0,0.5)]"
             />
             <h3>Mit meiner lieben Familie</h3>
           </div>
         </div>
         <button
           x-on:click="prevSlide"
-          class="absolute rounded-full left-2 lg:left-96 top-1/3 transform -translate-y-1/2 px-2 py-1 opacity-50 lg:opacity-100 lg:px-6 lg:py-3 bg-blue-800 text-white"
+          class="absolute rounded-full left-2 lg:left-[10%] top-1/3 transform -translate-y-1/2 px-2 py-1 opacity-50 lg:opacity-100 lg:px-6 lg:py-3 bg-blue-800 text-white"
         >
-         Zurück
+          Zurück
         </button>
         <button
           x-on:click="nextSlide"
-          class="absolute rounded-full right-2 lg:right-96  top-1/3 transform -translate-y-1/2 px-2 py-1 opacity-50 lg:opacity-100 lg:px-6 lg:py-3 bg-blue-800 text-white"
+          class="absolute rounded-full right-2 lg:right-[10%] top-1/3 transform -translate-y-1/2 px-2 py-1 opacity-50 lg:opacity-100 lg:px-6 lg:py-3 bg-blue-800 text-white"
         >
           Weiter
         </button>

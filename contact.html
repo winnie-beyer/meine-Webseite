@@ -17,7 +17,7 @@
 <div w3-include-HTML="header.html"></div>
 
     <main class="mb-52">
-        <div class="contact mx-auto mt-28 w-1/2 text-center ">
+        <div class="contact px-4 mx-auto mt-28 w-full lg:w-1/2 text-center ">
 
       <h1 class="text-3xl my-1">Lass uns Kontakt aufnehmen!</h1>
       <p class="text-xl ">Wenn Du eine Frage hast oder einfach nur <br>
@@ -25,20 +25,20 @@
 
 
        <!-- Form -->
-       <form action="/contact" method="post" class="flex flex-col flex-nowrap py-10 drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]">
-        <label for="username">Dein Name</label>
+       <form  action="/contact" method="post" class="bg-amber-50 flex flex-col flex-nowrap py-10 drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]">
+        <label for="username">Dein Name:</label>
         <input class=" focus:outline-blue-700" placeholder="Gib deinen Namen ein"
          type="text"
          name="username"
          id="username"/>
-         <label for="email">Deine Email</label>
+         <label for="email">Deine Email:</label>
          <input class="focus:outline-blue-700"  placeholder="gib deine Email ein"
           type="email"
           name="email"
           id="email"
           />
 
-          <label for="textarea">Deine Nachrichte</label>
+          <label for="textarea">Deine Nachrichte:</label>
           <textarea class="focus:outline-blue-700"  name="message"
            id="textarea"
             cols="30" 
